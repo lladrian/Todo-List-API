@@ -39,7 +39,7 @@
 
 3. First you need to install using **`npm i`** in terminal.
 
-4. To run use this command : **`npm i && npm start`**
+4. To run use this command : **`npm start`**
     - Usage:  `http://localhost:4000/users/add_user`
       - Search via Web: 
           - ## USER
