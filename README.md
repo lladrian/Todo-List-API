@@ -21,6 +21,12 @@
  - Implement proper data validation
  - Implement pagination and filtering for the to-do list
 
+## Bonus
+ - Implement filtering and sorting for the to-do list
+ - Implement unit tests for the API
+ - Implement rate limiting and throttling for the API
+ - Implement refresh token mechanism for the authentication
+
 ## What I installed to this app
 
 1. npm install express mongoose redis express-rate-limit dotenv nodemon
