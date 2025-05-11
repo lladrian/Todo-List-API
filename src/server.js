@@ -1,5 +1,4 @@
 import express from 'express';
-import { createClient } from 'redis';
 import rateLimit from 'express-rate-limit';
 import dotenv from 'dotenv';
 import connectDB from "./config/db.js";
@@ -24,13 +23,6 @@ const limiter = rateLimit({
     }
 });
 
-// Create a Redis client
-const redisClient = createClient({
-    url: 'redis://localhost:6379'
-});
-
-redisClient.connect().catch(console.error);
-
 app.use(limiter);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -38,7 +30,6 @@ app.set('trust proxy', true);
 
 app.use("/users", userRoutes);
 app.use("/todos", AuthenticateToken, todoListRoutes);
-
 
 connectDB();
 

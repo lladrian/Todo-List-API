@@ -24,11 +24,10 @@
 ## What I installed to this app
 
 1. npm install express mongoose redis express-rate-limit dotenv nodemon
-2. npm install moment-timezone bcrypt express-async-handler
-3. npm install jsonwebtoken
-4. Install testing tools :
+2. npm install moment-timezone bcrypt express-async-handler jsonwebtoken
+3. Install testing tools :
    - npm install --save-dev jest supertest
-   npm install --save-dev babel-jest @babel/core @babel/preset-env
+   - npm install babel-jest @babel/core @babel/preset-env
 
 
 
@@ -40,9 +39,26 @@
 
 3. First you need to install using **`npm i`** in terminal.
 
-4. To run use this command : `node api_weather_app.js`
-    - Usage:  `http://localhost:4000/weather/<location>`
+4. To run use this command : **`npm i && npm start`**
+    - Usage:  `http://localhost:4000/users/add_user`
       - Search via Web:
-          - **`http://localhost:4000/weather/San Jose, Ormoc City`**  fetches and returns weather data from a 3rd party API.
+            ## USER
+          - **POST** - **`http://localhost:4000/users/add_user`** to add new user.
+          - **POST** - **`http://localhost:4000/users/login_user`** to login the user.
+          - **PUT** - **`http://localhost:4000/users/update_user/:id`** to update the user.
+          - **PUT** - **`http://localhost:4000/users/update_user_password/:id`**  to update the user password.
+          - **GET** - **`http://localhost:4000/users/get_all_user`** to get all users.
+          - **GET** - **`http://localhost:4000/users/get_specific_user/:id`** to get the specific user.
+          - **DELETE** - **`http://localhost:4000/users/delete_user/:id`** to delete the user.
+          - **POST** - **`http://localhost:4000/users/token/`** to get the untokenized data from the user.
+
+            ## TODO LIST
+          - **GET** - **`http://localhost:4000/todos/get_specific_todo_list/:id`** to get specific todo list.
+          - **GET** - **`http://localhost:4000/todos/get_all_todo_list`** to get all todo lists.
+          - **POST** - **`http://localhost:4000/todos/add_todo_list`** to add new todo list.
+          - **PUT** - **`http://localhost:4000/todos/update_todo_list/:id/`** to update the todo list.
+          - **DELETE** - **`http://localhost:4000/todos/delete_todo_list/:id`** to delete the todo list.
 
 5. https://roadmap.sh/projects/todo-list-api
+
+
