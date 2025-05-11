@@ -17,9 +17,11 @@
  - CRUD operations for managing the to-do list
  - Implement user authentication to allow only authorized users to access the to-do list
  - Implement error handling and security measures
- - Use a database to store the user and to-do list data (you can use any database of your choice)
+ - Use a database to store the user and to-do list data (MongoDB)
  - Implement proper data validation
  - Implement pagination and filtering for the to-do list
+
+   
 
 ## Bonus
  - Implement filtering and sorting for the to-do list
