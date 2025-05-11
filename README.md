@@ -61,7 +61,12 @@
           - ## TODO LIST
           - **GET** - **`http://localhost:4000/todos/get_specific_todo_list/:id`** to get specific todo list.
           - **GET** - **`http://localhost:4000/todos/get_all_todo_list`** to get all todo lists.
-          - **GET** - **`http://localhost:4000/todos/get_all_todo_list?page=2&limit=5&sortBy=created_at&order=asc&title=shopping`** to get todo lists via filter.
+          - **GET** - **`http://localhost:4000/todos/get_all_todo_list?page=1`** to get todo lists via filter with query page.
+          - **GET** - **`http://localhost:4000/todos/get_all_todo_list?limit=1`** to get todo lists via filter with query limit.
+          - **GET** - **`http://localhost:4000/todos/get_all_todo_list?sortBy=created_at`** to get todo lists via filter with query sortBy.
+          - **GET** - **`http://localhost:4000/todos/get_all_todo_list?order=desc`** to get todo lists via filter with query order.
+          - **GET** - **`http://localhost:4000/todos/get_all_todo_list?order=asc`** to get todo lists via filter with query order.
+          - **GET** - **`http://localhost:4000/todos/get_all_todo_list?title=shopping`** to get todo lists via filter with query order.
           - **POST** - **`http://localhost:4000/todos/add_todo_list`** to add new todo list.
           - **PUT** - **`http://localhost:4000/todos/update_todo_list/:id/`** to update the todo list.
           - **DELETE** - **`http://localhost:4000/todos/delete_todo_list/:id`** to delete the todo list.
